@@ -28,7 +28,7 @@ public class CompressControllerTests {
 	public void candidateShouldReturnMyData() throws Exception {
 
 		this.mockMvc.perform(get("/candidate")).andDo(print()).andExpect(status().isOk())
-				.andExpect(jsonPath("$.lastName").value("Rubino")).andExpect(jsonPath("$.name").value("Leo Andres"))
+				.andExpect(jsonPath("$.lastName").value("Rubino")).andExpect(jsonPath("$.firstName").value("Leo Andres"))
 				.andExpect(jsonPath("$.id").value("33510567"));
 	}
 

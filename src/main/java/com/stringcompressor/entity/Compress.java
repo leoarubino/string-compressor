@@ -1,4 +1,6 @@
-package com.stringcompressor.app;
+package com.stringcompressor.entity;
+
+import com.stringcompressor.exeption.invalidCharExeption;
 
 public class Compress {
 	private String compressed;

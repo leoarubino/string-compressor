@@ -1,6 +1,6 @@
-package com.stringcompressor.app;
+package com.stringcompressor.entity;
 
-class CompressInput {
+public class CompressInput {
 	public String value;
 
 	public CompressInput() {

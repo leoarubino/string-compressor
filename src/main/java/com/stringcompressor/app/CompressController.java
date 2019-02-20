@@ -10,6 +10,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
+import com.stringcompressor.entity.Candidate;
+import com.stringcompressor.entity.Compress;
+import com.stringcompressor.entity.CompressInput;
+import com.stringcompressor.exeption.invalidCharExeption;
 
 @RestController
 public class CompressController {
@@ -20,7 +24,7 @@ public class CompressController {
 	
 	@RequestMapping("/")
 	public String root() {
-		return new String("ROOT");
+		return new String("/");
 	}
 
 	@RequestMapping(value = "/compressParam/{value}", method = { RequestMethod.POST, RequestMethod.GET })

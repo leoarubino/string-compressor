@@ -1,4 +1,4 @@
-package com.stringcompressor.app;
+package com.stringcompressor.exeption;
 
 public class invalidCharExeption extends RuntimeException {
 	private static final long serialVersionUID = 1L;

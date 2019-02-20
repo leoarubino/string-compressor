@@ -1,13 +1,13 @@
-package com.stringcompressor.app;
+package com.stringcompressor.entity;
 
 public class Candidate {
 	private String lastName;
-	private String name;
+	private String firstName;
 	private String id;
 
-	public Candidate(String lastName, String name, String id) {
+	public Candidate(String lastName, String firstName, String id) {
 		this.lastName = lastName;
-		this.name = name;
+		this.firstName = firstName;
 		this.id = id;
 	}
 
@@ -15,8 +15,8 @@ public class Candidate {
 		return id;
 	}
 
-	public String getName() {
-		return name;
+	public String getFirstName() {
+		return firstName;
 	}
 
 	public String getLastName() {
